@@ -1,0 +1,99 @@
+.magicCard {
+  position: relative;
+  height: 312px;
+  width: 224px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  transition: transform 0.3s ease-out;
+  z-index: 0;
+}
+
+.magicCardLoading{
+  position: relative;
+  padding: 2.5vh;
+  height: 450px;
+  background-size:contain;
+  width: auto;
+  z-index: 0;
+}
+
+.magicCardLoadingPack{
+  position: relative;
+  height: 450px;
+  width: auto;
+  z-index: 0;
+}
+
+.magicCardLoadingText{
+  position: relative;
+  margin-top: -250px;
+  height: 200px;
+  text-align: center;
+  font-size:larger;
+  padding: 10px;
+}
+
+.magicCardLoadingPack:before {
+  position: absolute;
+  z-index: -1;
+  border: inherit;
+  border-color: transparent;
+  background: inherit;
+  background-clip: border-box;
+  content: ''
+}
+
+.magicCardLoadingShiny{
+  position: absolute;
+  top: 67px;
+  left: 85px;
+  height: 74.25%;
+  width: 55%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+
+.magicCard img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  margin-right: 0;
+  backface-visibility: hidden;
+  z-index: 0;
+}
+
+.magicCard:hover {
+  z-index: 1;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-out;
+}
+
+
+.magicCard.foil {
+  position: relative;
+  height: 312px;
+  width: 224px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+  background-clip: content-box;
+  transition: background-position 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  z-index: 0;
+}
+
+.magicCard.foil:hover {
+  z-index: 1;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-out;
+}
+
+.magicCard.foil img {
+  opacity: 0.85;
+  z-index: 0;
+}

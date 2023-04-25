@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #1E1E1E;
+  color: #D3D3D3;
+}
+
+body{
+  background-color: #1E1E1E;
+  color: #D3D3D3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+  margin-bottom: -2vh;
+  margin-top: -3vh;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+.App-logo {
+  height: 20vh;
+  margin-top: -6vh;
+  margin-bottom: -6vh;
+}
+
+.mainButtons {
+  background-color: #74a8c0c1;
+  backdrop-filter: blur(2px);
+  color: #FFFFFF;
+  height: 6vh;
+  width: 25rem;
+  font-size: 26px;
+  font-weight:550;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+
+.prePackCSS{
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+
+.mainButtons:hover {
+  background-color: #527687c1;
+  backdrop-filter: blur(2px);
+  color: #FFFFFF;
+  height: 6vh;
+  width: 25rem;
+  font-size: 26px;
+  font-weight:550;
+  margin-bottom: 1vh;
+}
+
+.cardGrid{
+  margin-bottom: 5vh;
+  padding-bottom: 5vh;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 14%);
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: 20px 0px;
+  place-content: center;
+  justify-items: center;
+}
+
+
+.Buttons {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color:white;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(1px);
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.text-muted {
+  color:white;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
